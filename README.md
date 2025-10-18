@@ -25,6 +25,11 @@ This repository contains documentation, patterns, and best practices for enterpr
 - [Performance Tuning with Partitioning](Database/Performance_tune_partition.md)
 - [Table Database Size Daily Email](Database/Table_Database_Size_Daily_email.MD)
 
+---
+
+### Governance
+- [Data Governance Framework with Microsoft Purview](Governance/Purview.md)
+
 ## Content Summaries
 
 ### Data Pipeline Solutions
@@ -100,5 +105,21 @@ This section covers essential Oracle database administration, security, and perf
 - Covers space management, capacity planning, and proactive storage monitoring
 - Includes email notification setup and dashboard creation for database administrators
 
-These resources provide practical, enterprise-ready solutions for data integration challenges and comprehensive database management strategies, suitable for architects, developers, and database administrators working with heterogeneous data systems.
+### Data Governance & Compliance
+
+This section provides comprehensive guidance on implementing data governance frameworks and leveraging Microsoft Purview for enterprise data management:
+
+**[Data Governance Framework with Microsoft Purview](Governance/Purview.md)**
+- Complete framework development process with visual workflow diagram covering four key phases
+- Systematic approach to defining data sources, consumers, and ownership responsibilities
+- Implementation of validation, protection, and integrity processes for enterprise data
+- Monitoring frameworks, feedback loops, and continuous maturity roadmap development
+- Strategic alignment with business objectives and regulatory compliance requirements
+- Ten essential components including strategic foundation, roles/responsibilities, and policies
+- Coverage of industry-standard methodologies: DAMA-DMBOK, ISO 8000, NIST Privacy Framework, and DGI
+- Microsoft Purview capabilities for unified data catalog, automated metadata harvesting, and lineage visualization
+- Enterprise use cases for compliance management, data discovery automation, and audit support
+- Best practices for data classification, security monitoring, and privacy-first analytics
+
+These resources provide practical, enterprise-ready solutions for data integration challenges, comprehensive database management strategies, and robust governance frameworks suitable for architects, developers, and database administrators working with heterogeneous data systems.
 
