@@ -15,6 +15,7 @@ This repository contains documentation, patterns, and best practices for enterpr
 ---
 
 ### Database
+- [Encrypting Data at Rest in Oracle Exadata](Database/Encryption_Data_at_Rest.md)
 - [Expose Data from Oracle to SQL](Database/Expose_data_oracle_to_sql.md)
 - [Expose Table as DB Link](Database/Expose_table_as_db_link.md)
 - [IP Whitelisting](Database/IP_Whitelisting.MD)
