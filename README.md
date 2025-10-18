@@ -15,14 +15,14 @@ This repository contains documentation, patterns, and best practices for enterpr
 ---
 
 ### Database
-- [Expose Data from Oracle to SQL](Expose_data_oracle_to_sql.md)
-- [Expose Table as DB Link](Expose_table_as_db_link.md)
-- [IP Whitelisting](IP_Whitelisting.MD)
-- [Long Running Query](Long_Running_Query.MD)
-- [Oracle Database Unique Features](Oracle_Database_Unique_Features.md)
-- [Performance Measurement with AWR](Performance_measure_awr.md)
-- [Performance Tuning with Partitioning](Performance_tune_partition.md)
-- [Table Database Size Daily Email](Table_Database_Size_Daily_email.MD)
+- [Expose Data from Oracle to SQL](Database/Expose_data_oracle_to_sql.md)
+- [Expose Table as DB Link](Database/Expose_table_as_db_link.md)
+- [IP Whitelisting](Database/IP_Whitelisting.MD)
+- [Long Running Query](Database/Long_Running_Query.MD)
+- [Oracle Database Unique Features](Database/Oracle_Database_Unique_Features.md)
+- [Performance Measurement with AWR](Database/Performance_measure_awr.md)
+- [Performance Tuning with Partitioning](Database/Performance_tune_partition.md)
+- [Table Database Size Daily Email](Database/Table_Database_Size_Daily_email.MD)
 
 ## Blog Summary: Data Pipeline from Salesforce to Oracle
 
