@@ -1,0 +1,24 @@
+jobId,skillName,importance
+J1,Plumbing Repair,Required
+J2,Water Heater Repair,Required
+J2,Plumbing Repair,Preferred
+J3,Electrical Wiring,Required
+J4,Circuit Breaker Repair,Required
+J5,Lighting Installation,Required
+J5,Electrical Wiring,Preferred
+J6,AC Repair,Required
+J7,AC Installation,Required
+J8,Furnace/Heating Repair,Required
+J9,Carpentry,Required
+J10,Furniture Assembly,Required
+J11,Painting,Required
+J11,Drywall Repair,Preferred
+J12,Drywall Repair,Required
+J13,Flooring Installation,Required
+J14,Appliance Repair,Required
+J15,Appliance Repair,Required
+J16,Masonry,Required
+J17,Masonry,Required
+J18,Locksmith Services,Required
+J19,Pest Control,Required
+J20,Plumbing Repair,Required

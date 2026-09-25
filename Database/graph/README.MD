@@ -35,33 +35,51 @@ A graph database stores data as **nodes** (entities), **edges** (relationships) 
 
 ## 2. Graph Database Products
 
-| Product | Model | Query language | Deployment | When to use (one-liner) | Widely used in enterprise? |
-| --- | --- | --- | --- | --- | --- |
-| **Neo4j** | LPG (native) | Cypher, GQL | Self-managed, AuraDB (cloud) | The default pick for general-purpose graph OLTP, with the largest community and tooling. | ✅ **Yes, market leader** |
-| **Amazon Neptune** | LPG + RDF | Gremlin, openCypher, SPARQL | AWS managed | Use it if you're on AWS and want a managed graph without running servers. Neptune Analytics covers in-memory algorithms. | ✅ **Yes** (AWS shops) |
-| **Azure Cosmos DB for Apache Gremlin** | LPG (non-native) | Gremlin | Azure managed | Use it for Azure-native apps that need a globally distributed, elastic graph with modest traversal depth. | ⚠️ **Moderate.** Check the current Microsoft roadmap before new builds. |
-| **Microsoft Fabric Graph** | LPG over OneLake | GQL | Fabric SaaS | Use it for graph analytics over data already in the Fabric/OneLake lakehouse. | 🆕 **Emerging** |
-| **Oracle Database (23ai) Property Graph** | LPG over relational | SQL/PGQ, PGQL | On-prem, OCI, Autonomous DB | Use it when data is already in Oracle and you want graph queries without moving it. | ✅ **Yes** (Oracle estates) |
-| **SQL Server / Azure SQL Graph** | Node/edge tables | T-SQL `MATCH` | On-prem, Azure SQL | Use it for light graph queries (1–3 hops) inside an existing SQL Server app. | ⚠️ **Moderate.** It's used, but rarely for heavy graph work. |
-| **Google Spanner Graph** | LPG over Spanner | GQL, SQL | GCP managed | Use it for globally consistent, horizontally scaled graph plus relational data on GCP. | 🆕 **Growing** |
-| **TigerGraph** | LPG (native, MPP) | GSQL, openCypher/GQL | Self-managed, cloud | Use it for very large graphs with deep-link analytics (fraud rings, AML, supply chain) at scale. | ✅ **Yes** (banking, telco) |
-| **ArangoDB** | Multi-model (doc + graph + KV) | AQL | Self-managed, ArangoGraph cloud | Use it when you need document *and* graph in one engine. | ⚠️ **Moderate** |
-| **JanusGraph** | LPG (on Cassandra/HBase/ScyllaDB) | Gremlin | Self-managed (open source) | Use it for open-source, massive-scale graphs when you already run Cassandra or HBase. | ⚠️ **Moderate.** It needs strong in-house ops skills. |
-| **Memgraph** | LPG (in-memory, native) | Cypher | Self-managed, cloud | Use it for real-time and streaming graph analytics (Kafka in, low-latency answers out). | ⚠️ **Growing** |
-| **NebulaGraph** | LPG (distributed) | nGQL, openCypher | Self-managed, cloud | Use it for distributed graphs with billions of edges. Popular in APAC internet companies. | ⚠️ **Moderate** (strong in Asia) |
-| **FalkorDB** (RedisGraph successor) | LPG (sparse-matrix, in-memory) | Cypher | Self-managed, cloud | Use it for low-latency GraphRAG and knowledge-graph lookups for LLM apps. | 🆕 **Emerging** |
-| **Apache AGE** (PostgreSQL extension) | LPG over Postgres | openCypher inside SQL | Anywhere Postgres runs | Use it to add graph queries to an existing PostgreSQL database. | ⚠️ **Niche/growing** |
-| **Ontotext GraphDB** | RDF | SPARQL | Self-managed, cloud | Use it for enterprise knowledge graphs with ontologies and reasoning. | ✅ **Yes** (semantic/KG niche) |
-| **Stardog** | RDF + virtual graph | SPARQL, GraphQL | Self-managed, cloud | Use it for data-fabric scenarios that virtualize graph over existing sources without copying data. | ⚠️ **Moderate** |
-| **AllegroGraph** | RDF + vector | SPARQL, Prolog | Self-managed, cloud | Use it for semantic KGs combined with neuro-symbolic AI. | ⚠️ **Niche** |
-| **Dgraph** | Native graph (distributed) | DQL, GraphQL | Self-managed, cloud | Use it for a GraphQL-first app backend. | ⚠️ **Niche** |
+| Product | Model | Query language | Deployment | When to use (one-liner) | Widely used in enterprise? | License | Free to use (commercial vs non-commercial)? |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Neo4j** | LPG (native) | Cypher, GQL | Self-managed, AuraDB (cloud) | The default pick for general-purpose graph OLTP, with the largest community and tooling. | ✅ **Yes, market leader** | Community: GPLv3 (open source). Enterprise: commercial | 🟢 **Yes, Community Edition** is free for commercial use. Clustering, RBAC and hot backup need a paid Enterprise license (free only for dev/eval). AuraDB has a free cloud tier. |
+| **Amazon Neptune** | LPG + RDF | Gremlin, openCypher, SPARQL | AWS managed | Use it if you're on AWS and want a managed graph without running servers. Neptune Analytics covers in-memory algorithms. | ✅ **Yes** (AWS shops) | Proprietary (AWS service) | 🔴 **No.** Pay-as-you-go, with a limited AWS free trial. |
+| **Azure Cosmos DB for Apache Gremlin** | LPG (non-native) | Gremlin | Azure managed | Use it for Azure-native apps that need a globally distributed, elastic graph with modest traversal depth. | ⚠️ **Moderate.** Check the current Microsoft roadmap before new builds. | Proprietary (Azure service) | 🟡 **Free tier:** the first 1000 RU/s and 25 GB per account are free, and the local emulator is free for dev. Beyond that it is paid. |
+| **Microsoft Fabric Graph** | LPG over OneLake | GQL | Fabric SaaS | Use it for graph analytics over data already in the Fabric/OneLake lakehouse. | 🆕 **Emerging** | Proprietary (Fabric SaaS) | 🔴 **No.** Needs Fabric capacity; a trial is available. |
+| **Oracle Database (23ai) Property Graph** | LPG over relational | SQL/PGQ, PGQL | On-prem, OCI, Autonomous DB | Use it when data is already in Oracle and you want graph queries without moving it. | ✅ **Yes** (Oracle estates) | Proprietary. Graph is included in all editions at no extra cost | 🟡 **Oracle Database Free** is free under Oracle Free Use terms but resource-limited (2 CPU, 2 GB RAM, 12 GB data). Otherwise it needs a normal DB license. |
+| **SQL Server / Azure SQL Graph** | Node/edge tables | T-SQL `MATCH` | On-prem, Azure SQL | Use it for light graph queries (1–3 hops) inside an existing SQL Server app. | ⚠️ **Moderate.** It's used, but rarely for heavy graph work. | Proprietary. Graph is included in all editions | 🟡 **Express** is free for commercial use but size-limited. **Developer** is free for non-production only. Otherwise paid. |
+| **Google Spanner Graph** | LPG over Spanner | GQL, SQL | GCP managed | Use it for globally consistent, horizontally scaled graph plus relational data on GCP. | 🆕 **Growing** | Proprietary (GCP service) | 🔴 **No.** Paid, with a free-trial instance. |
+| **TigerGraph** | LPG (native, MPP) | GSQL, openCypher/GQL | Self-managed, cloud | Use it for very large graphs with deep-link analytics (fraud rings, AML, supply chain) at scale. | ✅ **Yes** (banking, telco) | Proprietary | 🟡 **Community Edition** is free with graph-size limits; check its terms for commercial production. Enterprise is paid, and Savanna cloud has a free tier. |
+| **ArangoDB** | Multi-model (doc + graph + KV) | AQL | Self-managed, ArangoGraph cloud | Use it when you need document *and* graph in one engine. | ⚠️ **Moderate** | Source: BSL 1.1. Community binaries: ArangoDB Community License | 🟡 **Community** is free, including commercial use, up to a **100 GB** dataset, and it can't be resold as a managed service. Larger datasets need a paid license. |
+| **JanusGraph** | LPG (on Cassandra/HBase/ScyllaDB) | Gremlin | Self-managed (open source) | Use it for open-source, massive-scale graphs when you already run Cassandra or HBase. | ⚠️ **Moderate.** It needs strong in-house ops skills. | Apache 2.0 | 🟢 **Yes.** Fully open source, free for any use. |
+| **Memgraph** | LPG (in-memory, native) | Cypher | Self-managed, cloud | Use it for real-time and streaming graph analytics (Kafka in, low-latency answers out). | ⚠️ **Growing** | Community: BSL 1.1. Enterprise: commercial | 🟢 **Community** is free, including commercial use, but you can't offer it as a DBaaS. Enterprise features are paid. |
+| **NebulaGraph** | LPG (distributed) | nGQL, openCypher | Self-managed, cloud | Use it for distributed graphs with billions of edges. Popular in APAC internet companies. | ⚠️ **Moderate** (strong in Asia) | Core: Apache 2.0. Enterprise: commercial | 🟢 **Yes, core** is free for any use. Enterprise tools and features are paid. |
+| **FalkorDB** (RedisGraph successor) | LPG (sparse-matrix, in-memory) | Cypher | Self-managed, cloud | Use it for low-latency GraphRAG and knowledge-graph lookups for LLM apps. | 🆕 **Emerging** | SSPL v1 | 🟢 **Free**, including commercial internal use. Offering it as a public service triggers SSPL obligations. |
+| **Apache AGE** (PostgreSQL extension) | LPG over Postgres | openCypher inside SQL | Anywhere Postgres runs | Use it to add graph queries to an existing PostgreSQL database. | ⚠️ **Niche/growing** | Apache 2.0 | 🟢 **Yes.** Fully open source, free for any use. |
+| **Ontotext GraphDB** | RDF | SPARQL | Self-managed, cloud | Use it for enterprise knowledge graphs with ontologies and reasoning. | ✅ **Yes** (semantic/KG niche) | Proprietary (vendor is now Graphwise) | 🟡 **Free edition** is usable commercially but limited in concurrency and features. Enterprise is paid. |
+| **Stardog** | RDF + virtual graph | SPARQL, GraphQL | Self-managed, cloud | Use it for data-fabric scenarios that virtualize graph over existing sources without copying data. | ⚠️ **Moderate** | Proprietary | 🟠 **Free license is for non-commercial, academic or evaluation use.** Commercial use is paid. Stardog Cloud has a free tier. |
+| **AllegroGraph** | RDF + vector | SPARQL, Prolog | Self-managed, cloud | Use it for semantic KGs combined with neuro-symbolic AI. | ⚠️ **Niche** | Proprietary | 🟡 **Free edition** is limited to 5 million triples; check its terms for commercial use. Otherwise paid. |
+| **Dgraph** | Native graph (distributed) | DQL, GraphQL | Self-managed, cloud | Use it for a GraphQL-first app backend. | ⚠️ **Niche** | Apache 2.0 | 🟢 **Yes.** Open source, free for any use. Paid cloud and support are optional. |
 
-> **Quick rule of thumb**
-> - Starting fresh with a general graph use case → **Neo4j**
-> - Already on AWS / Azure / GCP → **Neptune / Cosmos-or-Fabric / Spanner Graph**
-> - Data already in Oracle / SQL Server / Postgres → **SQL/PGQ, SQL Graph or Apache AGE** first, and move to a dedicated graph DB only if you outgrow them
-> - Ontologies, standards, cross-org data sharing → **RDF (GraphDB, Stardog, Neptune SPARQL)**
-> - Billions of edges and deep analytics → **TigerGraph / NebulaGraph**
+**Legend:** 🟢 free for commercial use · 🟡 free tier or edition with limits · 🟠 free for non-commercial use only · 🔴 paid (trial only)
+
+### License types in plain English
+
+| License | Can I use it free in a commercial product? | Catch |
+| --- | --- | --- |
+| **Apache 2.0** | ✅ Yes | None. Keep the notices. The most permissive option. |
+| **GPLv3** (Neo4j Community) | ✅ Yes, for running it as a database server | If you *modify and distribute* the database itself, you must share your changes. Just connecting your app to it over a driver doesn't trigger this. |
+| **BSL 1.1** (Memgraph, ArangoDB source) | ✅ Yes, for internal and product use | You can't offer it as a competing hosted/managed database service. Each release converts to open source after a set period (usually 4 years). |
+| **SSPL** (FalkorDB) | ✅ Yes, for internal use | If you offer it *as a service* to others, you must open-source your whole service stack. Not OSI-approved. |
+| **Proprietary with free edition** | ⚠️ Depends on the edition's terms | Usually capped by size, CPU or features. Some free editions are **non-commercial only** (e.g. Stardog Free). |
+| **Cloud managed services** | ❌ Pay-per-use | Free tiers and trials exist, but production costs money. |
+
+> ⚠️ Licensing terms change often (ArangoDB, Neo4j and Dgraph have all changed theirs in recent years). Check the vendor's current license page, and your legal team for production use.
+
+---
+
+**Quick rule of thumb**
+
+- Starting fresh with a general graph use case → **Neo4j**
+- Already on AWS / Azure / GCP → **Neptune / Cosmos-or-Fabric / Spanner Graph**
+- Data already in Oracle / SQL Server / Postgres → **SQL/PGQ, SQL Graph or Apache AGE** first, and move to a dedicated graph DB only if you outgrow them
+- Ontologies, standards, cross-org data sharing → **RDF (GraphDB, Stardog, Neptune SPARQL)**
+- Billions of edges and deep analytics → **TigerGraph / NebulaGraph**
 
 ---
 

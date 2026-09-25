@@ -1,0 +1,29 @@
+services:
+  neo4j:
+    image: neo4j:5.26-enterprise
+    container_name: neo4j-ee
+    ports:
+      - "7474:7474" # Browser / HTTP
+      - "7687:7687" # Bolt
+    environment:
+      NEO4J_AUTH: neo4j/ChangeMe123!
+      NEO4J_ACCEPT_LICENSE_AGREEMENT: eval
+      NEO4J_PLUGINS: '["apoc"]'
+      # Config: "." → "_" and "_" → "__", with the NEO4J_ prefix
+      NEO4J_server_memory_heap_initial__size: 1G
+      NEO4J_server_memory_heap_max__size: 1G
+      NEO4J_server_memory_pagecache_size: 1G
+      NEO4J_dbms_security_procedures_unrestricted: apoc.*
+      NEO4J_db_logs_query_enabled: INFO
+      NEO4J_db_logs_query_threshold: 500ms
+    volumes:
+      - ./neo4j/data:/data
+      - ./neo4j/logs:/logs
+      - ./neo4j/import:/import # files for LOAD CSV
+      - ./neo4j/plugins:/plugins
+    healthcheck:
+      test:
+        ["CMD-SHELL", "wget -qO- http://localhost:7474 >/dev/null || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 12

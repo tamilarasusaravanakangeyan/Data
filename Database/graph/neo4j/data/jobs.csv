@@ -1,0 +1,21 @@
+jobId,title,description,category,urgency,jobType,estimatedHours,budget,status,postedDate,location,hirerId
+J1,Leaking Kitchen Faucet Repair,"Fix a steadily dripping kitchen faucet and replace worn washers.",Plumbing,Emergency,OneTime,2,150,Completed,2026-08-01,Austin TX 78704,H1
+J2,Water Heater Replacement,"Replace a 12-year-old water heater that stopped producing hot water.",Plumbing,Scheduled,OneTime,6,900,Open,2026-08-20,Austin TX 78731,H6
+J3,Full House Rewiring,"Rewire a 1980s house to meet current electrical code, including panel upgrade.",Electrical,Scheduled,LongTerm,80,6500,Open,2026-08-18,Austin TX 78704,H1
+J4,Circuit Breaker Tripping Fix,"Diagnose and fix a breaker that trips whenever the microwave and toaster run together.",Electrical,Emergency,OneTime,3,220,In Progress,2026-08-22,Austin TX 78702,H8
+J5,Ceiling Fan and Lighting Installation,"Install two ceiling fans and replace outdated light fixtures in the living room and bedroom.",Electrical,Scheduled,OneTime,4,280,Completed,2026-08-02,Austin TX 78731,H6
+J6,AC Not Cooling - Emergency Repair,"AC blowing warm air on a 100F day; diagnose refrigerant leak or compressor issue.",HVAC,Emergency,OneTime,3,320,Completed,2026-07-15,Round Rock TX 78664,H2
+J7,New AC Unit Installation,"Install a new central AC unit for a 12-unit apartment building common area.",HVAC,Scheduled,OneTime,10,3800,Open,2026-08-24,Austin TX 78745,H3
+J8,Furnace Won't Start,"Furnace won't ignite; needs inspection and likely igniter replacement.",HVAC,Emergency,OneTime,2,200,Open,2026-08-26,Austin TX 78702,H8
+J9,Custom Backyard Deck Build,"Design and build a 400 sq ft cedar deck with built-in bench seating.",Carpentry,Scheduled,LongTerm,120,8500,Open,2026-08-09,Round Rock TX 78664,H2
+J10,Bulk Furniture Assembly,"Assemble 15 flat-pack furniture units for newly renovated apartment units.",Carpentry,Flexible,OneTime,8,400,Completed,2026-06-30,Cedar Park TX 78613,H4
+J11,Interior Repaint - 3 Bedroom House,"Repaint interior walls, ceilings, and trim throughout a 3-bedroom house.",Painting & Finishing,Scheduled,LongTerm,40,2800,In Progress,2026-07-19,Austin TX 78731,H6
+J12,Drywall Patch After Water Damage,"Patch and refinish drywall in a bathroom ceiling after a plumbing leak.",Painting & Finishing,Scheduled,OneTime,5,350,Completed,2026-06-14,Austin TX 78704,H1
+J13,Hardwood Flooring Installation,"Install engineered hardwood flooring across a common lobby area.",Painting & Finishing,Scheduled,LongTerm,60,5200,Open,2026-08-23,Austin TX 78745,H3
+J14,Refrigerator Not Cooling - Repair,"Refrigerator running but not cooling; likely compressor or thermostat issue.",Appliance Repair,Emergency,OneTime,2,180,Closed,2026-05-11,Austin TX 78702,H8
+J15,Washer and Dryer Repair,"Washer won't spin and dryer isn't heating; needs diagnosis and repair.",Appliance Repair,Scheduled,OneTime,3,220,Open,2026-08-22,Cedar Park TX 78613,H4
+J16,Backyard Retaining Wall,"Build a 60 ft segmented retaining wall to fix backyard drainage and erosion.",Masonry & Structural,Scheduled,LongTerm,100,7200,Open,2026-08-11,Round Rock TX 78664,H2
+J17,Chimney Brick Repair,"Repoint and repair cracked bricks on an exterior chimney.",Masonry & Structural,Scheduled,OneTime,8,650,Open,2026-08-26,Austin TX 78731,H6
+J18,Locked Out - Emergency Lock Change,"Locked out of the house; need entry and a full lock change for security.",Specialty Trades,Emergency,OneTime,1,120,Completed,2026-08-05,Austin TX 78702,H8
+J19,Quarterly Pest Control Treatment,"Recurring quarterly pest control treatment for a 40-unit HOA community.",Specialty Trades,Scheduled,Recurring,3,180,Open,2026-08-19,Austin TX 78759,H7
+J20,Office Kitchen Sink Clog,"Clear a persistent clog in the office kitchen sink drain.",Plumbing,Scheduled,OneTime,2,160,Open,2026-08-26,Austin TX 78701,H5

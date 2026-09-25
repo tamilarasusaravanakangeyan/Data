@@ -29,3 +29,4 @@ obj/
 *.bak
 *.log
 
+Database/graph/neo4j/neo4j

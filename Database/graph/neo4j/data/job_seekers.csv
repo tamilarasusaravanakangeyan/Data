@@ -1,0 +1,16 @@
+jobSeekerId,name,email,trade,location,yearsExperience,hourlyRate,licensed,availability,rating
+JS1,Carlos Mendez,carlos.mendez@example.com,Plumber,Austin TX,10,55,true,Same-day / Emergency,4.9
+JS2,Rita Alvarez,rita.alvarez@example.com,Electrician,Austin TX,8,60,true,Weekdays,4.8
+JS3,Tom Becker,tom.becker@example.com,HVAC Technician,Austin TX,12,65,true,Same-day / Emergency,4.9
+JS4,Grace Kim,grace.kim@example.com,General Handyman,Round Rock TX,5,40,false,Flexible,4.6
+JS5,Marcus Johnson,marcus.johnson@example.com,Carpenter,Austin TX,9,50,false,Weekdays,4.7
+JS6,Denise Flores,denise.flores@example.com,Painter,Austin TX,6,35,false,Flexible,4.5
+JS7,Andre Walker,andre.walker@example.com,Appliance Repair Technician,Cedar Park TX,7,45,false,Weekdays,4.6
+JS8,Linda Choi,linda.choi@example.com,Locksmith,Austin TX,4,50,true,24/7 Emergency,4.8
+JS9,Robert Diaz,robert.diaz@example.com,Mason,Austin TX,11,48,false,Weekdays,4.7
+JS10,Wanda Price,wanda.price@example.com,Pest Control Technician,Austin TX,5,42,true,Weekdays,4.5
+JS11,Kevin Ortiz,kevin.ortiz@example.com,Plumber,Round Rock TX,6,52,true,Same-day,4.6
+JS12,Sara Nguyen,sara.nguyen@example.com,Electrician,Cedar Park TX,5,58,true,Weekdays,4.7
+JS13,Jerome Bell,jerome.bell@example.com,HVAC Technician,Austin TX,9,62,true,Emergency,4.8
+JS14,Angela Cruz,angela.cruz@example.com,Flooring Installer,Austin TX,7,46,false,Flexible,4.6
+JS15,Hector Ruiz,hector.ruiz@example.com,Drywall & Painting Specialist,Austin TX,5,38,false,Flexible,4.4

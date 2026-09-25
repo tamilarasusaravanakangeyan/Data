@@ -1,0 +1,9 @@
+hirerId,name,contactName,type,email,location,phone
+H1,Jennifer Adams,Jennifer Adams,Residential,jennifer.adams@example.com,Austin TX 78704,512-555-0101
+H2,Mark Sullivan,Mark Sullivan,Residential,mark.sullivan@example.com,Round Rock TX 78664,512-555-0102
+H3,GreenAcres Property Management,Diane Foster,PropertyManagement,contact@greenacrespm.com,Austin TX 78745,512-555-0103
+H4,Riverside Apartments LLC,Carlos Rivera,PropertyManagement,carlos.rivera@riversideapts.com,Cedar Park TX 78613,512-555-0104
+H5,Sunny Cafe and Bakery,Nina Alvarado,Commercial,hello@sunnycafeaustin.com,Austin TX 78701,512-555-0105
+H6,Patricia Lee,Patricia Lee,Residential,patricia.lee@example.com,Austin TX 78731,512-555-0106
+H7,Oakwood HOA,Steven Park,PropertyManagement,steven.park@oakwoodhoa.org,Austin TX 78759,512-555-0107
+H8,David Kim,David Kim,Residential,david.kim@example.com,Austin TX 78702,512-555-0108

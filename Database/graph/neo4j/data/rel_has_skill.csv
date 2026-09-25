@@ -1,0 +1,31 @@
+jobSeekerId,skillName,proficiency,yearsUsed
+JS1,Plumbing Repair,Expert,10
+JS1,Pipe Installation,Expert,8
+JS1,Water Heater Repair,Advanced,6
+JS2,Electrical Wiring,Expert,8
+JS2,Circuit Breaker Repair,Expert,7
+JS2,Lighting Installation,Advanced,6
+JS3,AC Repair,Expert,12
+JS3,AC Installation,Expert,10
+JS3,Furnace/Heating Repair,Advanced,9
+JS4,Furniture Assembly,Advanced,5
+JS4,Drywall Repair,Intermediate,3
+JS4,Painting,Intermediate,3
+JS5,Carpentry,Expert,9
+JS5,Furniture Assembly,Advanced,6
+JS6,Painting,Expert,6
+JS6,Drywall Repair,Advanced,4
+JS7,Appliance Repair,Expert,7
+JS8,Locksmith Services,Expert,4
+JS9,Masonry,Expert,11
+JS10,Pest Control,Expert,5
+JS11,Plumbing Repair,Advanced,6
+JS11,Water Heater Repair,Intermediate,4
+JS12,Electrical Wiring,Advanced,5
+JS12,Lighting Installation,Advanced,5
+JS13,AC Repair,Expert,9
+JS13,Furnace/Heating Repair,Expert,8
+JS14,Flooring Installation,Expert,7
+JS14,Carpentry,Intermediate,3
+JS15,Drywall Repair,Expert,5
+JS15,Painting,Advanced,4
