@@ -137,6 +137,7 @@ A graph database stores data as **nodes** (entities), **edges** (relationships) 
 - **Knowledge graphs + vector search** is now a major enterprise driver for graph adoption.
 - Plain vector RAG retrieves *similar text chunks*. GraphRAG also retrieves **connected facts**, which answers multi-hop questions such as "Which suppliers of our delayed parts also supply our competitor?"
 - Most graph DBs now ship **vector indexes** (Neo4j, Neptune Analytics, FalkorDB, Memgraph, Spanner), so one store can serve both similarity and relationship queries.
+- See [GraphRAG Databases](../graphrag/README.MD) for the same GraphRAG dataset running on Neo4j, FalkorDB, Memgraph, PostgreSQL + AGE and ArangoDB.
 - Frameworks: LangChain/LlamaIndex graph integrations and Microsoft GraphRAG.
 
 ### 4.7 Performance intuition

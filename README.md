@@ -24,6 +24,7 @@ This repository contains documentation, patterns, and best practices for enterpr
 - [Performance Measurement with AWR](Database/Performance_measure_awr.md)
 - [Performance Tuning with Partitioning](Database/Performance_tune_partition.md)
 - [Table Database Size Daily Email](Database/Table_Database_Size_Daily_email.MD)
+- [GraphRAG Databases: Neo4j, FalkorDB, Memgraph, PostgreSQL + AGE, ArangoDB](Database/graphrag/README.MD)
 
 ---
 
@@ -104,6 +105,12 @@ This section covers essential Oracle database administration, security, and perf
 - Automated monitoring and reporting of database growth patterns
 - Covers space management, capacity planning, and proactive storage monitoring
 - Includes email notification setup and dashboard creation for database administrators
+
+**[GraphRAG Databases](Database/graphrag/README.MD)**
+- Learning guide to GraphRAG: how indexing and retrieval work, and the main retrieval patterns (local, global, multi-hop, hybrid, Text2Cypher)
+- One guide per database (Neo4j, FalkorDB, Memgraph, PostgreSQL with Apache AGE and pgvector, ArangoDB), all using the same airline example
+- Each guide covers the data model, indexes, example queries with their results, application code, gotchas, and strengths and weaknesses
+- Includes a side-by-side comparison, guidance on choosing a database, and a demo-to-production checklist
 
 ### Data Governance & Compliance
 
